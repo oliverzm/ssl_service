@@ -1,0 +1,7 @@
+-setcookie ssl_service_erl_cookie
+
+-connect_all false
+-start_epmd false
+-smp
++K true
++W w

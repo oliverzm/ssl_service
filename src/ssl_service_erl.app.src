@@ -5,7 +5,11 @@
   {mod, {ssl_service_erl_app, []}},
   {applications,
    [kernel,
-    stdlib
+    stdlib,
+    cowboy,
+    gun,
+    ewhois,
+    jiffy
    ]},
   {env,[]},
   {modules, []},
