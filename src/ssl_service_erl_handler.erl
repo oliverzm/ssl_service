@@ -33,8 +33,7 @@ handle_request(<<"GET">>, [<<"sslService">>, <<"getHistory">>], Req0, State) ->
     {ok, Req, State};
 
 handle_request(_, _, Req, State) ->
-    normalize_response(404, Req, <<"">>, State, #{}),
-    {ok, Req, State}.
+    normalize_response(404, Req, <<"">>, State, #{}).
 
 
 normalize_response(Code, Req, Response, State, Headers) ->
